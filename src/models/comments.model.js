@@ -7,11 +7,11 @@ const commentSchema = new mongoose.Schema({
      required : true,
  },
     owner : {
-        type : Schema.Types.ObjectId,
+        type : mongoose.Schema.Types.ObjectId,
         ref : "User",
     },
     video : {
-        type : Schema.Types.ObjectId,
+        type : mongoose.Schema.Types.ObjectId,
         ref : "Video",
     },
 
