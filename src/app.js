@@ -26,7 +26,9 @@ app.use(express.urlencoded({extended : true})); //it allow to send data in urlen
 app.use(express.static('public')); //it allow to serve static files like images, css, js etc.  from the public folder;
 app.use(cookieParser()); //it allow to parse the cookie data;
 //Routes
-
+app.get('/', (req, res) => {
+    res.send('Welcome to my API!');
+  });
 
 //routes declaration
 
